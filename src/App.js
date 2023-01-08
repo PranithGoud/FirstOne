@@ -1,5 +1,6 @@
 import React from "react";
 import Test from './Test';
+import App from './App';
 
 const App = () => {
   let name = "Pranit"
@@ -19,11 +20,23 @@ class Apps extends React.Component{
           <h3>
             <Test name = {this.state.name}/>
             </h3>
+
+            
             </center>
             </div>
     )
   }
 }
 
+const func = () => {
+const arr = ["img.jpg", "img2.jpg", "img3.jpg"]
+  return (
+    <div className ='App'> 
+      <h3>Hello world</h3>
+    {arr.map((item,index)= ()=> {<Img key = {index} src={item}/>})}
+
+    </div>
+  )
+}
 
 export default Apps;
